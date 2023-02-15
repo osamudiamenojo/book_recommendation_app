@@ -1,5 +1,6 @@
 package com.counsellor.book_recommendation_app.entities;
 
+import com.counsellor.book_recommendation_app.enums.Role;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,6 +18,7 @@ public class AppUSer extends BaseEntity{
     private String lastName;
     private String email;
     private String password;
+    private Role role;
 
 
 }
