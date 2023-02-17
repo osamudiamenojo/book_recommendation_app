@@ -16,6 +16,6 @@ public class UserController {
     @PostMapping
     public ResponseEntity<String> registerUser(@RequestBody SignUpDto signUpDto){
         userService.register(signUpDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body("You have been registered successfully")
+        return ResponseEntity.status(HttpStatus.CREATED).body("You have been registered successfully");
     }
 }
